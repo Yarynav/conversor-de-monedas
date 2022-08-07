@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Quattrocento+Sans:ital,wght@1,700&family=Quicksand&family=Raleway:wght@600&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Apis-REST</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convesor de moneda Nacional</h1>
+      <div class="box-container">
+        <h2>Pesos CLP</h2>
+        <input type="number" placeholder="Ingrea el monto en CLP" id="clp" />
+        <span>moneda a convertidor</span>
+        <select name="moneda" id="currencychange">
+          <option value="value1" class="moneda" selected>
+            seleccione moneda
+          </option>
+          <option value="euro" class="moneda">Euro</option>
+          <option value="uf" class="moneda">UF</option>
+          <option value="utm" class="moneda">UTM</option>
+          <option value="dolar" class="moneda">Dolar</option>
+        </select>
+        <button id="btn">Buscar</button>
+        <div id="result">...</div>
+      </div>
+      <div id="graphic"></div>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
