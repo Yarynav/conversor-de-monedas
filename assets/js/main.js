@@ -6,10 +6,18 @@ const graphic = document.querySelector("#graphic");
 let myChart;
 
 async function getRandomUser() {
-  const res = await fetch(`https://mindicador.cl/api/${currencychange.value}`);
-  const data = await res.json();
-  getChange(data);
-  getChart(data);
+  try {
+    const res = await fetch(
+      `https://mindicador.cl/api/${currencychange.value}`
+    );
+    const data = await res.json();
+    getChange(data);
+    getChart(data);
+  } catch {
+    alert(
+      "Hemos tenido un problema al conectar con el servidor. Intente más tarde."
+    );
+  }
 }
 
 btn.addEventListener("click", getRandomUser);
