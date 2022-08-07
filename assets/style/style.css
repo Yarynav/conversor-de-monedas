@@ -1,0 +1,58 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #C9B4C1;
+  
+
+}
+.box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 3px 3px 6px #48283C;
+  min-width: 500px;
+  min-height: 300px;
+  border-radius: 5px;
+  background-color: white;
+
+}
+#myChart{
+  min-width: 600px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 3px 6px #48283C;
+  border-radius: 2px;
+}
+
+#clp{
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+#btn{
+  border: none;
+  background-color: #c2acd6;
+  border-radius: 5px;
+  padding: 10px ;
+  border-radius: 5px;
+}
+#currencychange{
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
